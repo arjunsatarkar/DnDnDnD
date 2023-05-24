@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+import argparse
 import sys
 
-try:
-    word_num = int(sys.argv[1])
-except IndexError:
-    word_num = None
+parser = argparse.ArgumentParser(prog="D&D&D&D", description="Dungeons & Dragons D...")
+parser.add_argument("word_num", default=None, nargs="?", type=int)
+args = parser.parse_args()
+word_num = args.word_num
 
 WORDLIST_FILE_PATH = "corncob_lowercase.txt"
 
