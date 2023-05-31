@@ -7,7 +7,7 @@ parser.add_argument("word_num", default=None, nargs="?", type=int)
 args = parser.parse_args()
 word_num = args.word_num
 
-WORDLIST_FILE_PATH = "corncob_lowercase.txt"
+WORDLIST_FILE_PATH = "nouns.txt"
 
 with open(WORDLIST_FILE_PATH, "r") as wordlist_file:
     valid_words = set(
