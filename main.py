@@ -2,7 +2,7 @@
 import argparse
 import sys
 
-parser = argparse.ArgumentParser(prog="D&D&D&D", description="Dungeons & Dragons D...")
+parser = argparse.ArgumentParser(prog="D&D&D&D", description="Dungeons & Dragons & D...")
 parser.add_argument("word_num", default=None, nargs="?", type=int)
 args = parser.parse_args()
 word_num = args.word_num
